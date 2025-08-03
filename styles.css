@@ -1,0 +1,126 @@
+body {
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  background: linear-gradient(135deg,#6e8efb,#a777e3);
+  margin: 0;
+  padding: 1rem;
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+  color:#1f2e55;
+}
+.box {
+  width:100%;
+  max-width:600px;
+  background:#fff;
+  border-radius:12px;
+  padding:20px 24px;
+  box-shadow:0 20px 40px -10px rgba(0,0,0,0.2);
+  position:relative;
+}
+h1 {
+  margin:0;
+  font-size:1.6rem;
+}
+.small {
+  font-size:0.8rem;
+  color:#555;
+}
+.flex {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.top {
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+.form-row input, .form-row button {
+  padding:10px 12px;
+  border-radius:6px;
+  border:1px solid #cbd5e1;
+  font-size:0.9rem;
+}
+.form-row input {
+  flex:1;
+  min-width:140px;
+}
+#dueInput {
+  max-width:190px;
+}
+input:focus {
+  outline:2px solid #7c5aff;
+}
+.btn {
+  background:#7c5aff;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  transition:filter .2s;
+  border-radius:6px;
+}
+.btn:hover { filter:brightness(1.1); }
+.add-btn { white-space:nowrap; }
+.task {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  background:#f5f9ff;
+  border-radius:10px;
+  padding:12px 14px;
+  margin-top:10px;
+  position:relative;
+  border-left:6px solid transparent;
+}
+.task.completed .text { text-decoration:line-through; opacity:.6; }
+.task.overdue { border-left-color:#ff4d4d; }
+.task.due-soon { border-left-color:#ffd93d; }
+.text {
+  font-weight:600;
+}
+.info {
+  font-size:0.75rem;
+  margin-top:4px;
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+}
+.countdown {
+  font-weight:600;
+}
+.countdown.overdue { color:#d32f2f; }
+.countdown.soon { color:#b58900; }
+.actions {
+  display:flex;
+  gap:6px;
+  flex-shrink:0;
+  margin-left:12px;
+}
+.actions button {
+  padding:6px 10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:0.75rem;
+}
+.complete-btn {
+  background:#22c55e;
+  color:#fff;
+}
+.delete-btn {
+  background:#f43f5e;
+  color:#fff;
+}
+.no-tasks {
+  text-align:center;
+  margin-top:14px;
+}
+.footer-note {
+  margin-top:12px;
+  text-align:center;
+}
+.clock-display {
+  font-weight:600;
+  font-size:1rem;
+}
